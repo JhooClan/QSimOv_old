@@ -1,0 +1,8 @@
+var home = require('../app/controllers/home');
+
+//you can include all your controllers
+
+module.exports = function (app) {
+    app.get('/', home.home);//home
+    app.get('/home', home.home);//home
+}
